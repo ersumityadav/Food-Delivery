@@ -1,0 +1,226 @@
+/*CSS Reset*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: coral;
+    position: relative;
+}
+
+/*css variables*/
+.root{
+    --navbar-height: 60px;
+}
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:sticky;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    opacity: 0.4;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+
+}
+/* Navigation Bar: logo and image */
+#logo{
+    margin: 10px 20px;
+}
+#logo img{
+    height: 65px;
+    margin: 2px 3px;
+    border-radius: 50%;
+}
+
+
+/* Navigation Bar: list styling */
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.4rem;
+    font-family: 'Baloo 2', cursive;
+    /* font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+}
+#navbar ul li a{
+    display: block;
+    padding: 5px 20px;
+    text-decoration: none;
+    border-radius: 20px;
+    color: white;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* Home section */
+#Home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 45vh;
+    background-image: url(https://cdn.pixabay.com/photo/2016/12/26/17/28/food-1932466_1280.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 1.2rem;
+    z-index: -1;
+    /* background-attachment: fixed; */
+}
+/* #Home::before{
+    content: "";
+    position: absolute;
+    background: url(https://cdn.pixabay.com/photo/2016/12/26/17/28/food-1932466_1280.jpg) no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+} */
+#Home h1{
+    color: white;
+    font-family: sans-serif,serif;
+}
+#Home p{
+    color: white;
+    font-size: 1.3rem;
+    font-family: sans-serif,serif;
+}
+
+/* services section */
+.services-container{
+    /* margin-top: -10vh; */
+}
+#services{
+    margin: 10px 34px;
+    display: flex;
+}
+
+#services .box{
+    padding: 30px;
+    margin: 3px 6px;
+    border: 2px solid brown;
+    border-radius: 20px;
+    background-color: rgb(209, 153, 132);
+}
+
+#services .box img{
+    height: 150px;
+    /* width: 250px; */
+    display: block;
+    margin: auto;
+}
+#services .box p{
+    font-family: 'Bree Serif', serif;
+}
+
+/* clients section */
+
+#clients-section{
+    position: relative;
+    background-image: url(https://cdn.pixabay.com/photo/2015/04/20/13/30/kitchen-731351_1280.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.95;
+    z-index: -1;
+}
+
+#clients{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* #clients-section::before{
+    content: "";
+    position: absolute;
+    background: url(https://cdn.pixabay.com/photo/2017/06/06/22/37/italian-cuisine-2378729_1280.jpg);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+} */
+
+#clients img{
+    padding: 20px;
+    height: 130px;
+}
+
+/* contact section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url(https://cdn.pixabay.com/photo/2015/01/25/21/02/phone-612061_1280.jpg) no-repeat no-repeat center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1rem;
+}
+
+#contact-box label{
+    color: aqua;
+    font-size: 1.3rem;
+    font-family: 'Bree Serif',serif;
+}
+
+footer{
+    background-color: rgb(7, 54, 54);
+    padding: 7px;
+}
+
+/* utility classes */
+.H-primary{
+    font-size: 3.0rem;
+    font-family: 'Bree Serif', serif;
+    padding: 3px 12px;
+}
+.H-secondary{
+    font-size: 1.9rem;
+    font-family: 'Bree Serif', serif;
+    padding: 3px 12px;
+}
+.btn{
+    padding: 5px 20px;
+    cursor: pointer;
+    margin: 20px;
+    background-color: brown;
+    border-radius: 15px;
+    border: 2px solid whitesmoke;
+}
+.center{
+    text-align: center;
+}
+
+
